@@ -2,7 +2,7 @@
   "name": "legal-translation-platform",
   "version": "1.5.0",
   "description": "智能文书翻译平台 - 专为律师设计",
-  "homepage": "https://zac-chen-2024.github.io/FileTranslationFrontend",
+  "homepage": "https://zac-chen-2024.github.io/FileTranslationFrontendPro",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
