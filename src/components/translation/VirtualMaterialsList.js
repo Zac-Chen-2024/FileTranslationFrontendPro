@@ -203,12 +203,16 @@ const VirtualMaterialsList = ({ onAddMaterial, onExport, clientName, onFilesDrop
         sessionMaterial.confirmed = true;
       } else if (allTranslated) {
         sessionMaterial.status = ProcessingStep.TRANSLATED;
+        sessionMaterial.confirmed = false; // 明确设置为未确认
       } else if (anyProcessing) {
         sessionMaterial.status = ProcessingStep.TRANSLATING;
+        sessionMaterial.confirmed = false;
       } else if (anyFailed) {
         sessionMaterial.status = ProcessingStep.FAILED;
+        sessionMaterial.confirmed = false;
       } else {
         sessionMaterial.status = pages[0].status;
+        sessionMaterial.confirmed = false;
       }
 
       // 对页面按页码排序
